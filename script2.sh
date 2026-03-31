@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================================
 # Script 2: FOSS Package Inspector (Pro Version)
-# Author: Nitin Kolhe | Roll: 24BCE10532
+# Author: Siddhant Kumar | Roll: 24BAI10299
 # Course: Open Source Software
 # =============================================================
 
@@ -16,7 +16,7 @@ clear
 
 echo -e "${CYAN}==============================================${RESET}"
 echo -e "${CYAN}        FOSS Package Inspector (Pro)${RESET}"
-echo -e "${CYAN}     By Nitin Kolhe (24BCE10532)${RESET}"
+echo -e "${CYAN}     By Siddhant Kumar (24BAI10299)${RESET}"
 echo -e "${CYAN}==============================================${RESET}"
 echo ""
 
