@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================================
 # Script 5: Open Source Manifesto Generator
-# Author: Nitin Kolhe | Roll: 24BCE10532
+# Author: Siddhant Kumar | Roll: 24BAI10299
 # Course: Open Source Software
 # Description: Creates a personal open-source manifesto
 #              in a more human and expressive style.
@@ -9,7 +9,7 @@
 
 echo "====================================================="
 echo "        Open Source Manifesto Generator"
-echo "        Created by Nitin Kolhe (24BCE10532)"
+echo "        Created by Siddhant Kumar (24BAI10299)"
 echo "====================================================="
 echo ""
 echo "Hey there! 👋"
@@ -38,7 +38,7 @@ cat > "$OUTPUT" << EOF
         Date: $DATE
 ================================================
 
-Hi, I'm Nitin Kolhe.
+Hi, I'm Siddhant Kumar.
 
 Every day, I use $TOOL — not just as a tool,
 but as a reminder that someone, somewhere,
