@@ -1,7 +1,7 @@
 # 🚀 Open Source Software Capstone Project | VITyarthi
 
-👨‍💻 Author :- Nitin Kolhe
-🎓 Roll No: 24BCE10532
+👨‍💻 Author :- Siddhant Kumar
+🎓 Roll No: 24BAI10299
 📚 Course: Open Source Software
 
 ---
