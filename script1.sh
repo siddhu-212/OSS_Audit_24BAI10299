@@ -1,14 +1,14 @@
 #!/bin/bash
 # ============================================================
 # Script 1: System Identity Report (Personalized Edition)
-# Author: NITIN KOLHE | Roll: 24BCE10532
+# Author: Siddhant Kumar | Roll: 24BAI10299
 # Course: Open Source Software
 # Description: Friendly system report with personalized output
 # ============================================================
 
 # --- Student & Project Variables ---
-STUDENT_NAME="NITIN KOLHE"         
-ROLL_NUMBER="24BCE10532"
+STUDENT_NAME="Siddhant Kumar"         
+ROLL_NUMBER="24BAI10299"
 SOFTWARE_CHOICE="Python"
 
 # --- Greeting based on time ---
