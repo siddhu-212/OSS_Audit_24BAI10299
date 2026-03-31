@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================================
 # Script 3: Disk and Permission Auditor (Enhanced Version)
-# Author: Nitin Kolhe | Roll: 24BCE10532
+# Author: Siddhant Kumar | Roll: 24BAI10299
 # Course: Open Source Software
 # Description: Smart system audit tool with colors, clean output
 #              and better readability.
@@ -20,7 +20,7 @@ DIRS=("/etc" "/var/log" "/home" "/usr/bin" "/tmp")
 clear
 echo -e "${CYAN}====================================================${NC}"
 echo -e "${CYAN}   Disk & Permission Auditor (Enhanced)${NC}"
-echo -e "${CYAN}   By: Nitin Kolhe (24BCE10532)${NC}"
+echo -e "${CYAN}   By: Siddhant Kumar (24BAI10299)${NC}"
 echo -e "${CYAN}====================================================${NC}"
 echo ""
 echo -e "${YELLOW}🔍 Starting system audit... please wait${NC}"
