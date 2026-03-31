@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================================
 # Script 4: Log File Analyzer
-# Author: NITIN KOLHE | Roll: 24BCE10532
+# Author: Siddhant Kumar | Roll: 24BAI10299
 # Course: Open Source Software
 # Description: A simple and friendly tool to scan log files,
 #              count keyword matches, and show recent activity.
@@ -16,8 +16,8 @@ COUNT=0
 
 # --- Welcome Message ---
 echo "=============================================="
-echo "   🔍 Log File Analyzer by Nitin Kolhe"
-echo "   📘 Roll No: 24BCE10532"
+echo "   🔍 Log File Analyzer by Siddhant Kumar"
+echo "   📘 Roll No: 24BAI10299"
 echo "=============================================="
 echo ""
 echo "Hey! Let's analyze your log file 📄"
