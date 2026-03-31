@@ -1,196 +1,182 @@
-# 🚀 Open Source Software Capstone Project | VITyarthi
+🚀 Open Source Software Capstone Project | VITyarthi
 
-👨‍💻 Author :- Siddhant Kumar
+👨‍💻 Author: Siddhant Kumar
 🎓 Roll No: 24BAI10299
 📚 Course: Open Source Software
+🏫 University: VIT Bhopal University
 
----
+📌 Project Description
 
-## 📌 Project Description
+This project contains five Bash scripts demonstrating essential Linux system administration and Open Source Software (OSS) concepts.
 
-This project consists of 5 Bash scripts that demonstrate core concepts of Linux system administration and Open Source Software (OSS).
+Each script automates common Linux tasks and highlights the philosophy and practical usage of open-source tools.
 
-Each script focuses on real-world tasks such as:
+The project focuses on:
 
-* System monitoring
-* Package inspection
-* Disk auditing
-* Log analysis
-* Open source philosophy generation
+System monitoring
+Package inspection
+Disk usage auditing
+Log file analysis
+Open-source philosophy generation
 
----
+All scripts were developed and tested on Ubuntu 24.04 LTS.
 
-## 📂 Scripts Overview
-                 
+📂 Scripts Overview
+🔹 Script 1 — System Identity Report
 
-### 🔹 Script 1 — System Identity Report
+Displays detailed system information along with a welcome message.
 
-Displays a welcome screen with complete system information including:
+Information displayed:
 
-* Linux distribution name
-* Kernel version
-* Logged-in user
-* Home directory
-* System uptime
-* Current date & time
-* Open source license (GPL v2)
+Linux distribution name
+Kernel version
+Current logged-in user
+Home directory path
+System uptime
+Current date and time
+Open source license information (GPL v2)
 
-Concepts Used:
-Variables, command substitution `$()`, `echo`, `uname`, `whoami`, `uptime`, `date`, `grep`, `cut`, `tr`
+Concepts Used
 
----
+Variables
+Command substitution $()
+echo, uname, whoami, uptime, date
+grep, cut, tr
+🔹 Script 2 — FOSS Package Inspector
 
-### 🔹 Script 2 — FOSS Package Inspector
+Checks whether a specified package (for example Python3) is installed on the system.
 
-Checks whether a package (e.g., Python3) is installed using `dpkg`, displays:
+If installed, the script displays:
 
-* Version
-* Installation status
-* Package details
-* OSS philosophy note using `case`
+Package version
+Installation status
+Package description
 
-Concepts Used:
-`if-then-else`, `case`, `dpkg -l`, pipes, exit codes
+The script also prints an Open Source philosophy message using a case statement.
 
----
+Concepts Used
 
-### 🔹 Script 3 — Disk and Permission Auditor
+if-then-else statements
+case statements
+dpkg -l command
+Pipes and exit codes
+🔹 Script 3 — Disk and Permission Auditor
 
-Audits key Linux directories:
+Audits important Linux directories and reports their disk usage and permissions.
 
-* `/etc`, `/var/log`, `/home`, `/usr/bin`, `/tmp`
+Directories inspected:
 
-Also checks Python directories and binary location.
+/etc
+/var/log
+/home
+/usr/bin
+/tmp
 
-Concepts Used:
-`for` loop, arrays, `du`, `ls -ld`, `awk`, `find`, `[ -d ]` conditions
+It also checks Python installation directories and binary location.
 
----
+Concepts Used
 
-### 🔹 Script 4 — Log File Analyzer
+for loops
+Arrays
+du, ls -ld
+awk, find
+[ -d ] conditional checks
+🔹 Script 4 — Log File Analyzer
 
-* Accepts log file + optional keyword
-* Counts keyword occurrences (case-insensitive)
-* Displays last 5 matches
-* Handles missing/empty files
+Analyzes Linux log files and searches for specific keywords.
 
-Concepts Used:
-`while read`, `if-then`, counters, `$1 $2`, `grep`, `tail`, exit codes
+Features:
 
-Usage:
-
-```bash
+Accepts log file path and optional keyword
+Counts keyword occurrences (case-insensitive)
+Displays last five matching log entries
+Handles missing or empty files safely
+Example Usage
 ./script4.sh /var/log/syslog error
 ./script4.sh /var/log/syslog warning
 
+Concepts Used
 
+while read loops
+if-then conditions
+Counters
+Positional parameters $1, $2
+grep and tail
+🔹 Script 5 — Open Source Manifesto Generator
 
+An interactive script that generates a personalized Open Source philosophy statement.
 
-### 🔹 Script 5 — Open Source Manifesto Generator
+Features:
 
-* Takes user input interactively
-* Generates a personalized OSS philosophy
-* Saves output to `.txt` file
-* Displays result on terminal
+Accepts user input
+Generates a custom OSS message
+Saves output to a .txt file
+Displays result on terminal
 
-Concepts Used:
-`read`, string handling, file writing (`>>`), `date`, `cat`
+Concepts Used
 
+read for input
+String handling
+File writing using >>
+date command
+cat
+⚙️ How to Run the Project
+🔧 Prerequisites
+Linux OS (Ubuntu 20.04 or later recommended)
+Bash shell
+Python3 (optional for package inspection)
 
-## ⚙️ How to Run
+Install Python if required:
 
-### 🔧 Prerequisites
-
-* Linux OS (Ubuntu 20.04+ recommended)
-* Bash shell
-* Python3 (optional for inspection)
-
-Install Python if needed:
-
-```bash
 sudo apt install python3
-```
-
-
-
-### 🔧 Steps
-
-#### 1️⃣ Clone Repository
-
-```bash
+🔧 Steps to Execute
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/oss-linux-scripts.git
+2️⃣ Navigate to the Project Directory
 cd oss-linux-scripts
-```
-
-#### 2️⃣ Make Scripts Executable
-
-```bash
+3️⃣ Make Scripts Executable
 chmod +x *.sh
-```
-
-#### 3️⃣ Run Scripts
-
-```bash
+4️⃣ Run the Scripts
 ./script1.sh
 ./script2.sh
 ./script3.sh
 ./script4.sh /var/log/syslog error
 ./script5.sh
-```
+🔗 Dependencies
+Dependency	Purpose	Installation
+bash	Shell interpreter	Pre-installed
+python3	Package inspection	sudo apt install python3
+dpkg	Package manager	Pre-installed
+coreutils	du, ls, whoami	Pre-installed
+grep	Log searching	Pre-installed
 
+✅ The project works out-of-the-box on Ubuntu 22.04 / 24.04 LTS
 
+🌟 Features
 
-## 🔗 Dependencies
-
-| Dependency | Purpose              | Install                    |
-| ---------- | -------------------- | -------------------------- |
-| bash       | Shell interpreter    | Pre-installed              |
-| python3    | Package inspection   | `sudo apt install python3` |
-| dpkg       | Package manager      | Pre-installed              |
-| coreutils  | `du`, `ls`, `whoami` | Pre-installed              |
-| grep       | Log searching        | Pre-installed              |
-
-✅ Works out-of-the-box on **Ubuntu 22.04 / 24.04 LTS**
-
-## 🌟 Features
-
-✔ Interactive scripts
-✔ Real-world Linux tasks
-✔ Clean and readable output
-✔ Beginner-friendly
+✔ Interactive Bash scripts
+✔ Real-world Linux administration tasks
+✔ Clean and readable terminal output
+✔ Beginner-friendly implementation
 ✔ Fully open-source
 
+📜 License
 
+This project follows the principles of the GNU General Public License v2 (GPL v2).
 
-## 📜 License
+🎯 Learning Outcomes
 
-This project follows the principles of the
-**GNU General Public License v2 (GPL v2)**
+Through this project, the following concepts were learned:
 
+Bash scripting fundamentals
+Linux system commands
+File and log processing
+Automation using shell scripts
+Open Source Software philosophy
+📄 Project Submission
 
+This project was developed as part of the Open Source Software course at VIT Bhopal University.
 
-## 🎯 Learning Outcomes
-
-* Bash scripting fundamentals
-* Linux system commands
-* File and log handling
-* Automation techniques
-* Open source philosophy
-
-
-
-## 📄 Project Submission
-
-📌 This project was developed as part of the Open Source Software course.
-📌 Tested on Ubuntu 24.04 LTS (VirtualBox environment).
-📌 Full report submitted separately as per academic requirements.
-
-
-
-📄 Project Report
-The full project report (PDF) has been submitted separately on the VITyarthi portal as per submission requirements.
-
-This project was completed as part of the Open Source Software (OSS) course at VIT. All scripts were written and tested on Ubuntu 24.04.4 LTS running as a VirtualBox VM.
-
-
-
+Tested on Ubuntu 24.04.4 LTS (VirtualBox environment)
+All scripts were executed and verified successfully
+The complete project report (PDF) has been submitted separately on the VITyarthi portal as per academic guidelines.
